@@ -112,7 +112,7 @@ const unitList = [
             "accuracy": 95,
             "critical": 35
         },
-        "skills": "Healing",
+        "skills": "Apply Poison",
         "profilePic": AssassinFemale,
         "partyName": "Party 2"
     },
