@@ -28,7 +28,8 @@ const unitList = [
             "critical": 30
         },
         "skills": "Skull Splitter",
-        "profilePic": AxemanMale
+        "profilePic": AxemanMale,
+        "partyName": "Party 1"
     },
     {
         "id": 2,
@@ -44,7 +45,8 @@ const unitList = [
             "critical": 10
         },
         "skills": "Heal",
-        "profilePic": HealerFemale
+        "profilePic": HealerFemale,
+        "partyName": "Party 1"
     },
     {
         "id": 3,
@@ -60,7 +62,8 @@ const unitList = [
             "critical": 10
         },
         "skills": "Fireball",
-        "profilePic": CasterMale
+        "profilePic": CasterMale,
+        "partyName": "Party 1"
     },
     {
         "id": 4,
@@ -76,7 +79,8 @@ const unitList = [
             "critical": 10
         },
         "skills": "Bolster",
-        "profilePic": SpearmanMale
+        "profilePic": SpearmanMale,
+        "partyName": "Party 2"
     },
     {
         "id": 5,
@@ -92,7 +96,8 @@ const unitList = [
             "critical": 30
         },
         "skills": "Skull Splitter",
-        "profilePic": AxemanMale
+        "profilePic": AxemanMale,
+        "partyName": "Party 2"
     },
     {
         "id": 6,
@@ -108,7 +113,8 @@ const unitList = [
             "critical": 35
         },
         "skills": "Healing",
-        "profilePic": AssassinFemale
+        "profilePic": AssassinFemale,
+        "partyName": "Party 2"
     },
     {
         "id": 7,
@@ -124,7 +130,8 @@ const unitList = [
             "critical": 10
         },
         "skills": "Fireball",
-        "profilePic": CasterFemale
+        "profilePic": CasterFemale,
+        "partyName": "Party 3"
     },
     {
         "id": 8,
@@ -140,7 +147,8 @@ const unitList = [
             "critical": 35
         },
         "skills": "Backstab",
-        "profilePic": AssassinMale
+        "profilePic": AssassinMale,
+        "partyName": "Party 3"
     },
     {
         "id": 9,
@@ -156,7 +164,8 @@ const unitList = [
             "critical": 25
         },
         "skills": "Snipe",
-        "profilePic": ArcherMale
+        "profilePic": ArcherMale,
+        "partyName": "Party 3"
     },
     {
         "id": 10,
@@ -172,12 +181,13 @@ const unitList = [
             "critical": 15
         },
         "skills": "Double Strike",
-        "profilePic": SwordsmanFemale
+        "profilePic": SwordsmanFemale,
+        "partyName": "Party 4"
     },
     {
         "id": 11,
         "unitName": "Melody",
-        "className": "SpearmanF",
+        "className": "Spearman",
         "gender": "Female",
         "stats": {
             "hitPoints": 550,
@@ -188,7 +198,8 @@ const unitList = [
             "critical": 10
         },
         "skills": "Bolster",
-        "profilePic": SpearmanFemale
+        "profilePic": SpearmanFemale,
+        "partyName": "Party 4"
     },
     {
         "id": 12,
@@ -204,7 +215,8 @@ const unitList = [
             "critical": 10
         },
         "skills": "Heal",
-        "profilePic": HealerMale
+        "profilePic": HealerMale,
+        "partyName": "Party 5"
     }
 ];
 
