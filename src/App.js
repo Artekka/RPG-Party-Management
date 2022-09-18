@@ -2,9 +2,11 @@ import './App.css';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Units from './components/Units'
+import GroupedPartyMembers from './components/GroupedPartyMembers';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from "react"
 import unitList from "./assets/units/unitList"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 function App() {
 
@@ -35,17 +37,28 @@ function App() {
   return (
 
     <div>
+      <Router>
       <Header
         selectedParty={selectedParty}
         partyMemberCount={units.filter((unit) => unit.partyName === selectedParty).length}
-      />
-      <Units
-        units={units}
-        selectedParty={selectedParty}
-        handlePartySelectionChange={handlePartySelectionChange}
-        handleUnitSelection={handleUnitSelection}
-      />
-      <Footer />
+        />
+        <Routes>
+          <Route path="/"
+            element={
+              <Units
+                units={units}
+                selectedParty={selectedParty}
+                handlePartySelectionChange={handlePartySelectionChange}
+                handleUnitSelection={handleUnitSelection}
+              />
+            }>
+          </Route>
+          <Route path="/GroupedPartyMembers" element={<GroupedPartyMembers/>}>
+
+          </Route>
+          </Routes>
+        <Footer />
+        </Router>
     </div>
   );
 }

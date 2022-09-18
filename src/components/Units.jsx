@@ -21,9 +21,9 @@ const Units = ({units,selectedParty,handlePartySelectionChange,handleUnitSelecti
             <div className="row justify-content-center mt-3">
                 <div className="col-8">
                     <div className="card-collection">
-            {
-                units.map((unit) => (
-                    <div id={unit.id} className={(unit.partyName === selectedParty?'card m-2 unitSelected':'card m-3')} style={{cursor: "pointer"}} onClick={handleUnitSelection}>
+                        {
+                            units.map((unit) => (
+                                <div key={unit.id} id={unit.id} className={(unit.partyName === selectedParty?'card m-2 unitSelected':'card m-3')} style={{cursor: "pointer"}} onClick={handleUnitSelection}>
                         <img src={unit.profilePic} alt="" className="card-img-top" />
                         
                         <div className="card-body">
