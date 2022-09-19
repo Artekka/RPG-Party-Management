@@ -1,4 +1,5 @@
 import unitList from "../assets/units/unitList"
+import PartySelect from "./PartySelect";
 
 const Units = ({units,selectedParty,handlePartySelectionChange,handleUnitSelection}) => {
 
@@ -8,13 +9,12 @@ const Units = ({units,selectedParty,handlePartySelectionChange,handleUnitSelecti
         <main className="container">
             <div className="row justify-content-center mt-3 mb-3">
                 <div className="col-6">
-                    <select className="form-select form-select-lg" value={selectedParty} onChange={handlePartySelectionChange}>
-                        <option value="Party 1">Party 1</option>
-                        <option value="Party 2">Party 2</option>
-                        <option value="Party 3">Party 3</option>
-                        <option value="Party 4">Party 4</option>
-                        <option value="Party 5">Party 5</option>
-                    </select>
+                    <PartySelect
+                        units={units}
+                        selectedParty={selectedParty}
+                        handlePartySelectionChange={handlePartySelectionChange}
+                        handleUnitSelection={handleUnitSelection}
+                    />
                 </div>
             </div>
             

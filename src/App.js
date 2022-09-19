@@ -3,6 +3,9 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Units from './components/Units'
 import GroupedPartyMembers from './components/GroupedPartyMembers';
+import Nav from './components/Nav';
+import NotFound from './components/NotFound';
+import PartySelect from './components/PartySelect';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState, useEffect } from "react"
 import unitList from "./assets/units/unitList"
@@ -38,6 +41,7 @@ function App() {
 
     <div>
       <Router>
+        <Nav/>
       <Header
         selectedParty={selectedParty}
         partyMemberCount={units.filter((unit) => unit.partyName === selectedParty).length}
@@ -53,7 +57,16 @@ function App() {
               />
             }>
           </Route>
-          <Route path="/GroupedPartyMembers" element={<GroupedPartyMembers/>}>
+          <Route path="/GroupedPartyMembers"
+            element={
+              <GroupedPartyMembers
+                units={units}
+                selectedParty={selectedParty}
+                setParty={setParty}
+              />}>
+
+          </Route>
+          <Route path="*" element={<NotFound/>}>
 
           </Route>
           </Routes>
